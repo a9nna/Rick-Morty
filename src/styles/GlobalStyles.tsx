@@ -9,7 +9,6 @@ export const GlobalStyles = createGlobalStyle`
 
 body{
   margin: 0;
-  background-color: #7AC142;
   font-family:  "Source Code Pro", sans-serif; ;
 }
 
@@ -28,7 +27,10 @@ ul {
 }
 
 button, input  {
-  font-family: inherit;
+  font-family: inherit
 }
 
+button, a {
+  cursor: pointer;
+}
 `;

@@ -7,7 +7,7 @@ const NotfoundpageStyled = styled.div`
   align-items: center;
   padding: 20px;
   padding-bottom: 0;
-  background-image: url("img/404-background-image.webp");
+  background-image: url("/img/404-background-image.webp");
   width: 100%;
   height: 100vh;
 
@@ -41,9 +41,11 @@ const NotfoundpageStyled = styled.div`
       text-align: center;
     }
 
-    &__404 {
+    &__rick-morty {
       position: absolute;
-      top: 87%;
+      bottom: 0%;
+      aspect-ratio: 151/108;
+      width: 300px;
     }
   }
 `;

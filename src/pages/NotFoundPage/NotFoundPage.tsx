@@ -22,11 +22,9 @@ const NotFoundPage = (): JSX.Element => {
           </span>
         </span>
         <img
-          src="img/404.webp"
-          width="151"
-          height="108"
+          src="/img/404.webp"
           alt="Rick opening Morty's eyes"
-          className="page-not-found__404"
+          className="page-not-found__rick-morty"
         />
       </NotfoundpageStyled>
     </>

@@ -1,44 +1,73 @@
 import styled from "styled-components";
 
 const CharacterDetailStyle = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   position: absolute;
   left: 50%;
-  top: 107%;
-  transform: translate(-50%, -50%);
-  width: 300px;
-  height: 1180px;
+  top: 150px;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 60%;
   overflow: hidden;
+  border: 2px solid #000;
   border-radius: 12px;
   font-size: 1.18rem;
   z-index: -1;
 
-  img {
-    vertical-align: bottom;
-  }
+  .detail {
+    img {
+      vertical-align: bottom;
+    }
 
-  .detail__title {
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #864d0b;
+    &__avatar {
+      border-radius: 50%;
+      box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 20px 5px;
+    }
 
-    background-color: #feeb70;
-    font-weight: 700;
-  }
-  .name {
-    height: 50px;
-    background-color: #fff;
-  }
+    &__character-info {
+      display: flex;
+      flex-direction: column;
+      row-gap: 50px;
 
-  .detail__info {
-    border: 1px solid #864d0b;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+      &__name {
+        font-size: 55px;
+      }
 
-    background-color: #fff;
+      &__characteristics {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+
+        &__principal {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          row-gap: 10px;
+          justify-items: start;
+          padding: 20px;
+          box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 20px 5px;
+          border-radius: 12px;
+
+          span:nth-child(-n + 3) {
+            font-weight: 700;
+          }
+        }
+
+        &__secondary {
+          display: grid;
+          row-gap: 10px;
+          justify-items: start;
+          padding: 20px;
+          box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 20px 5px;
+          border-radius: 12px;
+
+          span:nth-child(2n + 1) {
+            font-weight: 700;
+          }
+        }
+      }
+    }
   }
 `;
 export default CharacterDetailStyle;
