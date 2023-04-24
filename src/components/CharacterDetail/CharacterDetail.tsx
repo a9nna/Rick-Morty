@@ -34,39 +34,26 @@ const CharacterDetail = (): JSX.Element => {
         alt={`A page detail with ${name}`}
         width={300}
         height={300}
+        className="detail__avatar"
       />
-      <div className="detail__title name">
-        <span>{name}</span>
-      </div>
-      <div className="detail__title">
-        <span>Gender</span>
-      </div>
-      <div className="detail__info">
-        <span>{gender}</span>
-      </div>
-      <div className="detail__title">
-        <span>Species</span>
-      </div>
-      <div className="detail__info">
-        <span>{species}</span>
-      </div>
-      <div className="detail__title">
-        <span>Status</span>
-      </div>
-      <div className="detail__info">
-        <span>{status}</span>
-      </div>
-      <div className="detail__title">
-        <span>Origin</span>
-      </div>
-      <div className="detail__info">
-        <span>{origin}</span>
-      </div>
-      <div className="detail__title">
-        <span>Location</span>
-      </div>
-      <div className="detail__info">
-        <span>{location}</span>
+      <div className="detail__character-info">
+        <span className="detail__character-info__name">{name}</span>
+        <div className="detail__character-info__characteristics">
+          <div className="detail__character-info__characteristics__principal">
+            <span>Gender</span>
+            <span>{gender}</span>
+            <span>Species</span>
+            <span>{species}</span>
+            <span>Status</span>
+            <span>{status}</span>
+          </div>
+          <div className="detail__character-info__characteristics__secondary">
+            <span>Origin</span>
+            <span>{origin}</span>
+            <span>Location</span>
+            <span>{location}</span>
+          </div>
+        </div>
       </div>
     </CharacterDetailStyle>
   );

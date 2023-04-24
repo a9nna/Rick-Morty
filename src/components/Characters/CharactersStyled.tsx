@@ -4,11 +4,13 @@ const CharactersList = styled.ul`
   position: absolute;
   z-index: -1;
   top: 90px;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
   justify-content: space-around;
-  gap: 20px;
+  row-gap: 50px;
   padding: 40px;
+  width: 100vw;
 `;
 
 export default CharactersList;

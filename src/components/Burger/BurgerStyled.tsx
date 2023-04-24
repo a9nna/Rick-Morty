@@ -12,6 +12,7 @@ export const BurgerStyled = styled.div<{ open: boolean }>`
   justify-content: space-around;
   flex-flow: column nowrap;
   background-color: white;
+  cursor: pointer;
 
   div {
     width: 32px;

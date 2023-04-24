@@ -6,7 +6,7 @@ const Loader = (): JSX.Element => {
       <img
         className="loader__image"
         alt="Rick and Morty falling through a portal"
-        src="img/loader.webp"
+        src="/img/loader.webp"
         width={320}
         height={267}
       ></img>

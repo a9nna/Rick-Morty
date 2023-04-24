@@ -5,14 +5,14 @@ const Header = (): JSX.Element => {
   return (
     <HeaderStyle>
       <img
-        src="img/title-gun.png"
+        src="/img/title-gun.png"
         alt="page logo"
         width="64"
         height="25"
         className="header__logo-img"
       />
       <img
-        src="img/rick-morty-name.webp"
+        src="/img/rick-morty-name.webp"
         alt="rick and morty name"
         width="160"
         height="54"

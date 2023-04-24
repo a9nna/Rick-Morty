@@ -5,6 +5,8 @@ const CharacterCard = styled.div`
   display: flex;
   flex-direction: column;
   border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 20px 5px;
+  width: fit-content;
   overflow: hidden;
 
   .card {
@@ -24,8 +26,8 @@ const CharacterCard = styled.div`
       height: 80px;
       padding: 10px;
       border-radius: 12px 12px 0 0;
-      background-color: #feeb70;
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      background: rgba(254, 253, 253, 0.5);
       font-weight: bold;
 
       & span {
@@ -39,7 +41,7 @@ const CharacterCard = styled.div`
       flex-wrap: wrap;
       height: 150px;
       width: 300px;
-      background-color: #feeb70;
+      background: rgba(254, 253, 253, 0.5);
     }
 
     &__origin {

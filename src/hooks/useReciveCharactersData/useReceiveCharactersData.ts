@@ -29,7 +29,7 @@ export const useReceiveCharactersData =
         const apiData = (await response.json()) as RickAndMortyApiDataStructure;
 
         dispatch(loadApiDataActionCreator(apiData));
-        setTimeout(() => dispatchUi(setLoaderOffAction()), 1000);
+        dispatchUi(setLoaderOffAction());
       } catch (error) {
         return (error as Error).message;
       }
@@ -54,7 +54,7 @@ export const useReceiveCharactersData =
             results: [character],
           };
           dispatch(loadApiDataActionCreator(charaterId));
-          setTimeout(() => dispatchUi(setLoaderOffAction()), 1000);
+          dispatchUi(setLoaderOffAction());
         } catch (error) {
           return (error as Error).message;
         }
